@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body {
+    text-align: center;
+    background: #FFDEF1;
+    background-image: url(images/saniro-bg.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: cover;
+    min-height: 90vh;
+}
+h1 {
+    font-size: 4em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+}
+h2 {
+    margin-bottom: 10px;
+    font-size: 3em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+#resetButton {
+    margin-top: 10px;
+    padding: 15px 20px;
+    color: #f96abe;
+    background: rgba(216, 205, 212, 0.502);
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    border: 1px solid #f96abe;
+    border-radius: 10px;
+}
+#resetButton:hover {
+    color: #fff;
+    background: #f96abe;
+    border: 1px solid #fff;
+}
+#board {
+    width: 530px;
+    height: 475px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 222, 241, 0.1);
+    z-index: 1;
+    border: 5px solid #f96abe;
+    border-radius: 10px;
+}
+.card {
+    height: 111px;
+    width: 99px;
+    margin: 2.5px;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+        background: #FFDEF1;
+        background-image: url(images/saniro-bg.jpg);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
+        background-size:auto;
+       
+      
+    }
+       h1 {
+        font-size: 3.5em;
+        margin-top: 20px;
+    }
+    h2 {
+        font-size: 2.2em;
+        margin-top: 10px;
+    }
+    #resetButton {
+        font-size: 1.5em;
+        padding: 10px 15px;
+    }
+    #board {
+        width:474px;
+        height: 421px;
+        margin-top: 50px;
+    }
+    .card {
+        height: 100px;
+        width: 90px;
+        margin: 1.5px;
+    }
+}
+
+/* Media query for phones */
+@media (max-width: 480px) {
+    body {
+        text-align: center;
+        background: #FFDEF1;
+        background-image: url(images/saniro-bg-phone.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
+        background-size:cover;
+      
+    }
+    h1 {
+        font-size: 2.5em;
+        margin-top: 20px;
+    }
+  
+        h2 {
+            font-size: 2em;
+            margin-top: 10px;
+        }
+   
+    #resetButton {
+        font-size: 1em;
+        padding: 10px 14px;
+    }
+    #board {
+        width: 321px;
+        height: 376px;
+    }
+    .card {
+        height: 90px;
+        width: 60px;
+        margin: 1px;
+    }
+}
